@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+   /* Navbar Base */
+   .custom-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(12px); /* Blurred background */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Nav Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #ffffff;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  /* Active Link Highlight */
+  .nav-links a.active {
+    color: #007bff;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: 1.2rem;
+      font-size: 0.85rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .hero {
+    #home.hero::before {
+  content: "console.log('Hello World!'); int main() { return 0; }";
+  position: fixed;
+  color:rgba(236, 240, 239, 0.02);
+  font-family: monospace;
+  font-size: 4rem;
+  white-space: nowrap;
+  top: 20%;
+  left: 10%;
+  pointer-events: none;
+}
+    }
+
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .section-title {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .card {
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+  /* Dark Mode Toggle Button Styling */
+  /* Dark Mode Toggle Button Styling */
+  .dark-btn {
+    position: fixed; /* Fix the position on the screen */
+    bottom: 20px; /* Distance from the bottom */
+    right: 20px; /* Distance from the right */
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Make the button circular */
+    width: 50px; /* Button width */
+    height: 50px; /* Button height */
+    font-size: 1.2rem; /* Icon size */
+    display: flex; /* Center the icon inside the button */
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    z-index: 1000; /* Ensure it stays above other elements */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth hover effect */
+  }
+
+  .dark-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+  }
+
+  /* Dark Mode Styles */
+  .dark-mode {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+  }
+  body.dark-mode footer {
+    background-color: #1e1e1e; /* Dark background for footer */
+    color: #ffffff; }
+
+#learning-journey {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.journey-timeline {
+  list-style: none;
+  padding-left: 0;
+  max-width: 700px;
+  margin: 0 auto;
+  border-left: 2px solid #007bff;
+  position: relative;
+}
+
+.journey-timeline li {
+  position: relative;
+  padding: 20px 20px 20px 40px;
+}
+
+.journey-timeline li::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  left: -9px;
+  width: 16px;
+  height: 16px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+.journey-year {
+  font-weight: bold;
+  color: #007bff;
+  display: block;
+  margin-bottom: 5px;
+}
+
+    /* Paste your background CSS here */
+    #home {
+    background: linear-gradient(-45deg, #00220e, #011f15, #022012, #043319);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Ensure text is visible */
+  }
+
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .github-button {
+  display: inline-flex;
+  align-items: center;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.github-button:hover {
+  background-color: #f0f0f0;
+}
+
+.github-button .icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+  </style>
+</head>
+<body>
+  
+
+  <header>
+    <nav class="custom-nav">
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#open-source">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Qualifications">Qualifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+ <!-- Dark Mode Toggle Button -->
+<button id="darkToggle" class="dark-btn">🌙</button>
+
+  <!-- Hero Section -->
+  
+  
+  <section class="hero" id="home">
+    <div id="particles-js"></div>
+    
+
+    <h1>Hello, I'm Ishank Kaushik</h1>
+    <p class="lead">1st Year CSE Student | Learning Web Dev</p>
+    
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="container py-5">
+    <h2 class="section-title">About Me</h2>
+    <p class="text-center">I'm a 1st-year CSE student interested in Data Science  and Web Designing. Currently learning HTML, CSS, and Bootstrap. Passionate about building my skills and portfolio.</p>
+  </section>
+
+  <section id="Qualifications" class="container py-5">
+    <h2 class="text-center mb-4"><b>Qualifications</b></h2>
+    <div class="row g-4 justify-content-center">
+      <!-- B.Tech Card -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">B.Tech in Computer Science Engineering</h5>
+            <p class="card-text">Dronacharya College Of Engineering, 2025 - Present</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Senior Secondary Card -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Senior Secondary (12th)</h5>
+            <p class="card-text">Royal Oak International School, 2024</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Secondary Card -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Secondary (10th)</h5>
+            <p class="card-text">Royal Oak International School, 2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id = "Projects & Contributions" class ="text-center my-5">
+    <section id="open-source" class="py-5 bg-dark text-white">
+      <div class="container">
+        <h2 class="text-center mb-5" data-aos="fade-up">🌐 Projects</h2>
+        <h3 class="text-center mb-5" data-aos="fade-up">Open Source Contributions</h3>
+        <div class="row g-4">
+    
+          <!-- Project 1 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="card bg-secondary h-100 shadow-lg border-0 rounded-4">
+              <div class="card-body">
+                <h4 class="card-title">Project One</h4>
+                <p class="card-text">Contributed to the <strong>First Open Source Project</strong><p>Initiated my open-source journey with a successful first commit to a GitHub repository.</p>
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="https://github.com/KAUSHIKISHANK/DevInnovators-FirstOpenSourceCommit" target="_blank" class="github-button">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon">
+                  GitHub
+                </a>
+                
+              </div>
+            </div>
+          </div>
+    
+          <!-- Project 2 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="card bg-secondary h-100 shadow-lg border-0 rounded-4">
+              <div class="card-body">
+                <h4 class="card-title">Project Two</h4>
+                <p class="card-text">Created a Function in Telegram Bot which return the chat history with the bot in Downloadable Json Format.</p>
+                <img src="download.jpg" class="img-responsive" alt="Python Logo" width="50">
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="https://github.com/KAUSHIKISHANK/Dev-Automators-Telegram-Bot" target="_blank" class="github-button">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Project 3 -->
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="card bg-secondary h-100 shadow-lg border-0 rounded-4">
+              <div class="card-body">
+                <h4 class="card-title">Project Three</h4>
+                <p class="card-text">Devloped a Frontend and User Interface(UI) For Search Page.</p>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="50">
+                 <class="mt-2">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="50">
+          <class="mt-2">
+              </div>
+              <div class="card-footer bg-transparent border-0">
+                <a href="https://github.com/KAUSHIKISHANK/DevInnovators-Open-Forum-Platform" target="_blank" class="github-button">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" class="icon">
+                  GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    
+  </section>
+  
+  <!-- Skills Section -->
+  <section id="skills" class="text-center my-5">
+    <h2 class="mb-4"><b>Skills</b></h2>
+    <div class="container">
+      <div class="row justify-content-center">
+        
+        <div class="col-6 col-sm-3 mb-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" width="50">
+          <p class="mt-2">HTML</p>
+        </div>
+  
+        <div class="col-6 col-sm-3 mb-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" width="50">
+          <p class="mt-2">CSS</p>
+        </div>
+  
+        <div class="col-6 col-sm-3 mb-4">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" width="50">
+          <p class="mt-2">Bootstrap</p>
+        </div>
+  
+        <div class="col-6 col-sm-3 mb-4">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C Programming" width="50">
+          <p class="mt-2">C Programming</p>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+  
+  <!-- Learning Journey Section -->
+  <section id="learning-journey">
+    <div class="container">
+      <h2 class="section-title">Learning Journey</h2>
+      <ul class="journey-timeline">
+        <li>
+          <span class="journey-year">2023</span>
+          <p><strong>Started with HTML & CSS</strong> — Built static web pages and understood semantic structure.</p>
+        </li>
+        <li>
+          <span class="journey-year">2024</span>
+          <p><strong>Dived into C & Bootstrap</strong> — Made responsive sites and built mini projects using logic.</p>
+        </li>
+        <li>
+          <span class="journey-year">2025</span>
+          <p><strong>Learning JavaScript</strong> — Adding interactivity, learning DOM, and making dynamic portfolios.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Me</h2>
+      <div class="row justify-content-center">
+        
+        
+  
+        <!-- LinkedIn -->
+        <div class="col-md-2 col-4">
+          <a href="https://www.linkedin.com/in/ishank-kaushik-5a698433b" target="_blank">
+            <img src="download1.png" alt="LinkedIn" width="50">
+            <p>LinkedIn</p>
+          </a>
+        </div>
+
+        
+        <form action="https://formspree.io/f/mjkwynwp"  method="POST" class="w-75 mx-auto mt-4">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="_replyto" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="5" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </https:>
+       
+        
+  
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ishank Kaushik. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 80
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.5
+      },
+      "size": {
+        "value": 3
+      },
+      "move": {
+        "enable": true,
+        "speed": 2
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        }
+      }
+    }
+  });
+ 
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
+  
+  const toggleBtn = document.getElementById("darkToggle"); // Corrected id
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+
+  // Optional: change button text/icon
+  toggleBtn.textContent = document.body.classList.contains("dark-mode")
+    ? "☀️  "
+    : "🌙  ";
+});
+  
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    });
+  });
+
+  // Active link switching
+  
+  window.addEventListener("scroll", () => {
+    let current = "";
+    document.querySelectorAll("section[id]").forEach(section => {
+      const sectionTop = section.offsetTop - 150;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add("active");
+      }
+    });
+  });
+  </script>
+</body>
+</html> 
